@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>3D prentun og 3D skönnun</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<section id="header">
+
+				<!-- Logo -->
+				<h1><a href="index.html">3D prentun og 3D skönnun</a></h1>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Heim</a></li>
+					</ul>
+				</nav>
+
+			</section>
+
+			<!-- Main -->
+			<section id="main">
+				<div class="container">
+
+					<!-- Content -->
+					<article class="box post">
+
+						<a href="#" class="image featured">
+							<img src="images/3dprentstock.jpg" alt="3D prentun og 3D skönnun" />
+						</a>
+
+						<section>
+							<header>
+								<h2>3D skönnun</h2>
+							</header>
+
+							<p>
+								Ég ákvað að 3D-skanna nikótínpúðadollu sem vinkona mín átti til að fá nákvæmt grunnmódel fyrir hönnun og frekari úrvinnslu. Til þess notaði ég
+								<a href="https://poly.cam/" target="_blank" rel="noopener">Polycam</a>
+								í símanum, sem gerir mér kleift að búa til þrívítt líkan án sérhæfðs búnaðar. Í stuttu máli virkar 3D-skönnun þannig að forritið safnar mörgum myndum af hlutnum úr mismunandi sjónarhornum og finnur sameiginleg „kennileiti“ á milli mynda. Út frá því er reiknað út form hlutarins og byggt upp punkta- eða netlíkanið (mesh). Að lokum er hægt að leggja á líkanið áferð (texture) þannig að það líti út eins og raunverulegi hluturinn. Til að fá góða niðurstöðu passa ég að lýsing sé jöfn, hreyfi mig í hring í kringum hlutinn og nái bæði toppi, hliðum og botni. Skönnunin sparaði tíma, minnkaði líkur á mælivillum og gaf mér raunhæfan grunn til að vinna áfram með í CAD.
+							</p>
+
+							<model-viewer
+								src="assets/models/25.2.2026.glb"
+								camera-controls
+								auto-rotate
+								style="width:100%; height:600px; display:block; background:#f2f2f2; border-radius:12px;">
+							</model-viewer>
+
+							<p>
+								Eins og sést kom módelið ágætlega út, hins vegar átti það í erfiðleikum með borðið í kring. Ég var samt sáttur með niðurstöðuna. Til að bæta skönnunina væri hægt að halda stöðugri hreyfingu, taka fleiri myndir og ná fleiri sjónarhornum; í þessari skönnun tók ég aðeins um 20 myndir.
+							</p>
+						</section>
+
+						<section>
+							<header>
+								<h2>3D prentun</h2>
+							</header>
+
+							<p>
+								Ég hannaði nikótínpúðahaldara og ákvað að setja Véló framan á sem skýran hönnunarþátt. Nafnið er meðvitaður orðaleikur sem tengir saman nikótínpúðamerkið VELO og Vélina, nemendafélagið sem ég er forseti af. Með þessu verður haldarinn ekki bara praktísk lausn, heldur líka hluti af sjálfsmynd og ímynd félagsins — auðþekkjanlegur og tengdur félagsstarfinu. Hönnunin nýtir einfalda formgerð og skýra merkingu til að sameina notagildi og sjónræna tengingu við Vélina.
+							</p>
+
+							<p>
+								Hönnunin fór í gegnum þrjú þrep. Fyrst leitaði ég að málsetningum á netinu og hannaði út frá þeim. Ég vissi að ég vildi gera eins konar klemmu aftan á haldarann sem hægt væri að setja í bílinn eða jafnvel á bjórkippuna úr fyrri verkefnum. Það var kúnst að hanna klemmuna og tók mig smá tíma, þannig að ég ákvað að prófa hönnunina með því að prenta út í 50% stærð. Ég byrjaði með hönnun þar sem klemmuþykktin var 0,6 mm í 100% skala, en þá var ekki hægt að prenta út í 50% þar sem þvermálið á stútnum á prentaranum er 0,4 mm. Þess vegna stækkaði ég þykktina í 1 mm og prentaði. Áður en prentun gat hafist þurfti ég að velja hentuga stöðu fyrir stuðningana (supports), og eftir smá prófanir varð þessi staða fyrir valinu.
+							</p>
+
+							<img
+								src="images/support.jpg"
+								alt="Stilling fyrir stuðninga (supports) í prentun"
+								style="max-width:250px; width:100%; height:auto; display:block; margin:0 auto;" />
+
+							<p></p>
+
+							<p>
+								Þessi staða hentaði vel til að prenta klemmuna, en hins vegar fór það á kostnað útlits á einni hlið hringsins. Eftir prentun kom í ljós að klemman var ekki nógu þykk og myndi líklega brotna.
+							</p>
+
+							<img
+								src="images/klemman.jpg"
+								alt="Prentuð klemmulausn (fyrri útgáfa)"
+								style="max-width:250px; width:100%; height:auto; display:block; margin:0 auto;" />
+
+							<p>
+								Því fór ég aftur í Fusion og breytti þykkt klemmunnar í 2 mm og lagaði lögunina. Þetta er því lokahönnunin.
+							</p>
+
+							<model-viewer
+								src="assets/models/AnyConv.com__v%C3%A9l%C3%B3final.glb"
+								camera-controls
+								auto-rotate
+								style="width:100%; height:600px; display:block; background:#f2f2f2; border-radius:12px;">
+							</model-viewer>
+
+							<p>
+								Þetta reyndist fullkomin hönnun, tilbúin í prentun í sömu stöðu og áður. Hluturinn hentar mun betur í additive manufacturing (3D prentun) en í hefðbundinni subtractive framleiðslu. Formið inniheldur sveigðar, mjóar og innskornar geometríur sem eru auðveldar að byggja upp lag fyrir lag, en myndu krefjast flókinna uppsetninga og takmarkast af verkfæraaðgengi í fræsingu. Í subtractive framleiðslu þyrfti annaðhvort að skipta hlutnum í marga parta, fræsa þá í sitthvoru lagi og líma eða festa saman, eða nota dýrari búnað eins og 5-ása fræsingu með sérhæfðum skurðarverkfærum. Einnig yrðu innri horn alltaf með radíus sem ræðst af verkfærisþvermáli, og mjög mjóar veggir gætu valdið titringi og lélegri yfirborðsáferð. Með 3D prentun er hins vegar hægt að framleiða hlutinn í einu stykki, ná flóknum formum án samsetningar og halda hönnuninni eins og hún er án þess að fórna virkni eða útliti.
+							</p>
+
+							<img
+								src="images/veloibil.jpg"
+								alt="Lokahlutur í bíl með dollu"
+								style="max-width:250px; width:100%; height:auto; display:block; margin:0 auto;" />
+
+							<p></p>
+
+							<p>
+								Hér má sjá lokahlutinn í bíl með dollu í sér. Ég framleiddi hlutinn með additive manufacturing og notaði Bambu Lab A1 3D prentara. Sá prentari hentar vel fyrir þessa tegund hönnunar þar sem hann getur byggt upp flókin form lag fyrir lag án þess að þurfa að skipta hlutnum í marga hluta eða hanna sérstaklega fyrir verkfæraaðgengi eins og í fræsingu. Með Bambu Lab A1 gat ég prentað hlutinn í einu stykki og náð þeim sveigðu flötum, innskotum og mjóu veggjum sem væru erfiðir og dýrir í subtractive framleiðslu. Þetta gerði framleiðsluferlið bæði einfaldara og áreiðanlegra og leyfði mér að halda hönnuninni óbreyttri án þess að fórna virkni.
+							</p>
+
+							<p>
+								Ég fékk mikinn innblástur frá þessum hönnunum á netinu —
+								<a href="https://thangs.com/designer/3D%20Sanctuary/3d-model/Zyn-Can%20Holder-1299827" target="_blank" rel="noopener">Zyn Can Holder á Thangs (3D Sanctuary)</a>
+								og
+								<a href="https://www.thingiverse.com/thing:6988158" target="_blank" rel="noopener">svipaðri lausn á Thingiverse</a>.
+								Ég fann þessar hannanir með því að leita að „Zyn can holder“. Þrátt fyrir það var öll hönnunin mín <strong>teiknuð frá grunni</strong> í CAD og útfærð með mínum eigin málsetningum, festingum og útlitshönnun. Markmiðið var að búa til eigin útgáfu sem hentar betur mínum notkunarkröfum og framleiðsluferli.
+							</p>
+						</section>
+
+						<section>
+							<header>
+								<h2>Lærdómur</h2>
+							</header>
+
+							<p>
+								Ég lærði mikið á þessu verkefni um 3D-prentun, bæði hvað varðar undirbúning fyrir prentun og hvernig hönnunin hefur bein áhrif á gæði og árangur. Með endurteknum prófunum fékk ég betri tilfinningu fyrir tolerönsum, veggþykkt, styrkingum og því hvenær þarf að nota stuðningsstrúktúra til að tryggja góða yfirborðsáferð og áreiðanlega prentun. Samhliða þessu fékk ég líka dýpri skilning á Autodesk Fusion og þróaði vinnuferlið mitt töluvert. Ég notaði ýmis verkfæri og „features“ sem ég hafði ekki nýtt áður, til dæmis til að móta flóknari sveigjur, bæta við nákvæmum festingum, stilla parametrískar víddir og endurtaka breytingar hratt án þess að þurfa að endurteikna. Í heildina hjálpaði verkefnið mér að tengja saman hönnun og framleiðslu á mun raunhæfari hátt og gaf mér betri innsýn í hvernig CAD, prentstillingar og efnishegðun vinna saman í framkvæmd.
+							</p>
+						</section>
+
+					</article>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-4 col-6-medium col-12-small"></div>
+
+						<div class="col-4 col-12-medium">
+							<section>
+								<header>
+									<h2>Samfélagsmiðlar</h2>
+								</header>
+								<ul class="social">
+									<li><a class="icon brands fa-instagram" href="https://www.instagram.com/viggo.ashworth/"><span class="label">Instagram</span></a></li>
+									<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/viggo-alexander-ashworth-67b573208/"><span class="label">LinkedIn</span></a></li>
+								</ul>
+								<ul class="contact">
+									<li>
+										<h3>Mail</h3>
+										<p><a href="mailto:viggoalexander@gmail.com">viggoalexander@gmail.com</a></p>
+									</li>
+									<li>
+										<h3>Sími</h3>
+										<p>(354) 624 3496</p>
+									</li>
+								</ul>
+							</section>
+						</div>
+
+						<div class="col-12">
+							<div id="copyright">
+								<ul class="links">
+									<li>&copy; Untitled. All rights reserved.</li>
+									<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- 3D Model Viewer -->
+		<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+	</body>
+</html>
